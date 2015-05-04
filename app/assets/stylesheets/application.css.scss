@@ -153,6 +153,7 @@ li{
 
 .classes li{
 	font-size: 35px;
+	cursor: pointer;
 }
 
 #day .classes li:hover{
@@ -170,4 +171,20 @@ li{
 	width: 100%;
 	margin: 10px;
 	float: left;
+}
+
+#magos{
+	display: none;
+}
+
+#paladinos{
+	display: none;
+}
+
+#assassinos{
+	display: none;
+}
+
+#necromancers{
+	display: none;
 }

@@ -14,3 +14,59 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+
+  $('a[href^="#"]').on('click',function (e) {
+    e.preventDefault();
+
+    var target = this.hash;
+
+    $('html, body').stop().animate({
+      'scrollTop': $(target).offset().top
+    }, 2300, 'swing', function () {
+      window.location.hash = target;
+    });
+  });
+
+});
+
+function magos(){
+	document.getElementById("magos").style.display = "block";
+	document.getElementById("guerreiros").style.display = "none";
+	document.getElementById("assassinos").style.display = "none";
+	document.getElementById("paladinos").style.display = "none";
+	document.getElementById("necromancers").style.display = "none";
+}
+
+function guerreiros(){
+	document.getElementById("magos").style.display = "none";
+	document.getElementById("guerreiros").style.display = "block";
+	document.getElementById("assassinos").style.display = "none";
+	document.getElementById("paladinos").style.display = "none";
+	document.getElementById("necromancers").style.display = "none";
+}
+
+function assassinos(){
+	document.getElementById("magos").style.display = "none";
+	document.getElementById("guerreiros").style.display = "none";
+	document.getElementById("assassinos").style.display = "block";
+	document.getElementById("paladinos").style.display = "none";
+	document.getElementById("necromancers").style.display = "none";
+}
+
+function paladinos(){
+	document.getElementById("magos").style.display = "none";
+	document.getElementById("guerreiros").style.display = "none";
+	document.getElementById("assassinos").style.display = "none";
+	document.getElementById("paladinos").style.display = "block";
+	document.getElementById("necromancers").style.display = "none";
+}
+
+function necromancers(){
+	document.getElementById("magos").style.display = "none";
+	document.getElementById("guerreiros").style.display = "none";
+	document.getElementById("assassinos").style.display = "none";
+	document.getElementById("paladinos").style.display = "none";
+	document.getElementById("necromancers").style.display = "block";
+}

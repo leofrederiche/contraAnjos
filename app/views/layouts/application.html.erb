@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
   <% Time.zone = "Brasilia" %>
 </head>
-<body id="<%= Time.zone.now.hour >= 19 ? 'night' : 'day' %>">
+<body id="<%= background %>">
 
 <nav>
 	<ul>

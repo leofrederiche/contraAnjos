@@ -73,13 +73,13 @@
  	z-index: 20;
  	background-image: image-url("line.png");
  	background-size: 100% 100%;
+ 	text-align: center;
  }
 
  .line #logo{
- 	position: absolute;
+ 	position: relative;
  	width: 470px;
  	top: -290%;
- 	left: 30.7%;
  }
 
  @font-face {
